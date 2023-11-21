@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infeksi Sistem Gastro-Usus</title>
+</head>
+<body>
+    <h1>Infeksi Sistem Gastro-Usus</h1>
+    <p>Program ini berfungsi untuk mengidentifikasi penyakit apa yang menyerang anda berdasarkan gejala yang anda alami.
+        <br>
+        Semakin besar presentase maka semakin semakin besar kemungkinan anda terserang penyakit tersebut
+    </p>
+    <form action = "result.html">
+        <table>
+            <tr>
+                <td>
+                    <label for = "gejala_1">1. Apakah anda sering mengalami buang air besar (lebih dari 2 kali)?</label>
+                    <input type = "checkbox" id = "gejala_1" name = "gejala_1" value = "true"/>
+                    <input type = "hidden" id = "gejala_1" name = "gejala_1" value = "false"/><br> 
+                    
+                    <label for = "gejala_2">2. Apakah anda mengalami berak encer?</label>
+                    <input type = "checkbox" id = "gejala_2" name = "gejala_2" value = "true"/>
+                    <input type = "hidden" id = "gejala_2" name = "gejala_2" value = "false"/><br>
+                    
+                    <label for = "gejala_3">3. Apakah anda mengalami berak berdarah?</label>
+                    <input type = "checkbox" id = "gejala_3" name = "gejala_3" value = "true"/>
+                    <input type = "hidden" id = "gejala_3" name = "gejala_3" value = "false"/><br>
+                    
+                    <label for = "gejala_4">4. Apakah anda mearasa lesu dan tidak bergairah?</label>
+                    <input type = "checkbox" id = "gejala_4" name = "gejala_4" value = "true"/>
+                    <input type = "hidden" id = "gejala_4" name = "gejala_4" value = "false"/><br>
+                    
+                    <label for = "gejala_5">5. Apakah anda tidak selera makan?</label>
+                    <input type = "checkbox" id = "gejala_5" name = "gejala_5" value = "true"/>
+                    <input type = "hidden" id = "gejala_5" name = "gejala_5" value = "false"/><br>
+                    
+                    <label for = "gejala_6">6. Apakah anda merasa mual dan sering muntah (lebih dari 1 kali)?</label>
+                    <input type = "checkbox" id = "gejala_6" name = "gejala_6" value = "true"/>
+                    <input type = "hidden" id = "gejala_6" name = "gejala_6" value = "false"/><br>
+                    
+                    <label for = "gejala_7">7. Apakah anda merasa sakit dibagian perut?</label>
+                    <input type = "checkbox" id = "gejala_7" name = "gejala_7" value = "true"/>
+                    <input type = "hidden" id = "gejala_7" name = "gejala_7" value = "false"/><br>
+                    
+                    <label for = "gejala_8">8. Apakah tekanan darah anda rendah?</label>
+                    <input type = "checkbox" id = "gejala_8" name = "gejala_8" value = "true"/>
+                    <input type = "hidden" id = "gejala_8" name = "gejala_8" value = "false"/><br>
+                    
+                    <label for = "gejala_9">9. Apakah anda merasa pusing?</label>
+                    <input type = "checkbox" id = "gejala_9" name = "gejala_9" value = "true"/>
+                    <input type = "hidden" id = "gejala_9" name = "gejala_9" value = "false"/><br>
+                    
+                    <label for = "gejala_10">10. Apakah anda mengalami pingsan?</label>
+                    <input type = "checkbox" id = "gejala_10" name = "gejala_10" value = "true"/>
+                    <input type = "hidden" id = "gejala_10" name = "gejala_10" value = "false"/><br>
+                </td>
+                <td width = "100px"></td>
+                <td>
+                    <label for = "gejala_11">11. Apakah suhu badan anda tinggi?</label>
+                    <input type = "checkbox" id = "gejala_11" name = "gejala_11" value = "true"/>
+                    <input type = "hidden" id = "gejala_11" name = "gejala_11" value = "false"/><br>
+                    
+                    <label for = "gejala_12">12. Apakah anda mengalai luka dibagian tertentu?</label>
+                    <input type = "checkbox" id = "gejala_12" name = "gejala_12" value = "true"/>
+                    <input type = "hidden" id = "gejala_12" name = "gejala_12" value = "false"/><br>
+                    
+                    <label for = "gejala_13">13. Apakah anda tidak dapat menggerakkan anggota badan tertentu?</label>
+                    <input type = "checkbox" id = "gejala_13" name = "gejala_13" value = "true"/>
+                    <input type = "hidden" id = "gejala_13" name = "gejala_13" value = "false"/><br>
+                    
+                    <label for = "gejala_14">14. Apakah anda pernah memakan sesuatu?</label>
+                    <input type = "checkbox" id = "gejala_14" name = "gejala_14" value = "true"/>
+                    <input type = "hidden" id = "gejala_14" name = "gejala_14" value = "false"/><br>
+                    
+                    <label for = "gejala_15">15. Apakah anda memakan daging?</label>
+                    <input type = "checkbox" id = "gejala_15" name = "gejala_15" value = "true"/>
+                    <input type = "hidden" id = "gejala_15" name = "gejala_15" value = "false"/><br>
+                    
+                    <label for = "gejala_16">16. Apakah anda memakan jamur?</label>
+                    <input type = "checkbox" id = "gejala_16" name = "gejala_16" value = "true"/>
+                    <input type = "hidden" id = "gejala_16" name = "gejala_16" value = "false"/><br>
+                    
+                    <label for = "gejala_17">17. Apakah anda memakan makanan kaleng?</label>
+                    <input type = "checkbox" id ="gejala_17" name = "gejala_17" value = "true"/>
+                    <input type = "hidden" id = "gejala_17" name = "gejala_17" value = "false"/><br>
+                    
+                    <label for = "gejala_18">18. Apakah anda membeli susu?</label>
+                    <input type = "checkbox" id = "gejala_18" name = "gejala_18" value = "true"/>
+                    <input type = "hidden" id = "gejala_18" name = "gejala_18" value = "false"/><br>
+                    
+                    <label for = "gejala_19">19. Apakah anda meminum susu?</label>
+                    <input type = "checkbox" id = "gejala_19" name = "gejala_19" value = "true"/>
+                    <input type = "hidden" id = "gejala_19" name = "gejala_19" value = "false"/><br>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" onclick="submitForm()">Submit</button>
+    </form>
+    <button onClick="history.go(0);">Refresh Page</button>
+    <script>
+        function submitFrom() {
+            var gejala_1 = document.getElementById("gejala_1").value;
+            var gejala_2 = document.getElementById("gejala_2").value;
+            var gejala_3 = document.getElementById("gejala_3").value;
+            var gejala_4 = document.getElementById("gejala_4").value;
+            var gejala_5 = document.getElementById("gejala_5").value;
+            var gejala_6 = document.getElementById("gejala_6").value;
+            var gejala_7 = document.getElementById("gejala_7").value;
+            var gejala_8 = document.getElementById("gejala_8").value;
+            var gejala_9 = document.getElementById("gejala_9").value;
+            var gejala_10 = document.getElementById("gejala_10").value;
+            var gejala_11 = document.getElementById("gejala_11").value;
+            var gejala_12 = document.getElementById("gejala_12").value;
+            var gejala_13 = document.getElementById("gejala_13").value;
+            var gejala_14 = document.getElementById("gejala_14").value;
+            var gejala_15 = document.getElementById("gejala_15").value;
+            var gejala_16 = document.getElementById("gejala_16").value;
+            var gejala_17 = document.getElementById("gejala_17").value;
+            var gejala_18 = document.getElementById("gejala_18").value;
+            var gejala_19 = document.getElementById("gejala_19").value;
+
+            
+
+            //Mengirim nilai input ke file link.html
+            window.location.href = "link.html?gejala_1=" + gejala_1 + "$gejala_2=" + gejala_2 + "$gejala_3=" + gejala_3 + "$gejala_4="
+            gejala_4 + "$gejala_5=" + gejala_5 + "$gejala_6=" + gejala_6 + "$gejala_7=" + gejala_7 + "$gejala_8=" + gejala_8 + 
+            "$gejala_9=" + gejala_9 + "$gejala_10=" + gejala_10 + "$gejala_11=" + gejala_11 + "$gejala_12=" + gejala_12 + "$gejala_13="
+             + gejala_13 + "$gejala_14=" + gejala_14 + "$gejala_15=" + gejala_15 + "$gejala_16=" + gejala_16 + "$gejala_17=" + gejala_17
+            + "$gejala_18=" + gejala_18 + "$gejala_19=" + gejala_19;
+        }
+    </script>    
+</body>
+</html>

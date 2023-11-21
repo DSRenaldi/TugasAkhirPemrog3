@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Result</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .column{
+        float: left;
+        width: 50%;
+        padding: 5px;
+    }
+
+    /*Clearfix (clear floats)*/
+    .row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    table{
+        border-collapse:  collpase;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+
+    th,td{
+        text-align: left;
+        padding: 16px
+    }
+
+    tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+</style>
+<body>
+    <div class = "row">
+        <div class = "column">
+            <table border = "1">
+                <tr>
+                    <th>Pertanyaan</th>
+                    <th>Respon User</th>
+                </tr>
+                <tr>
+                    <td>
+                        1. Apakah anda sering mengalami buang air besar (lebih dari 2 kali)?
+                    </td>
+                    <td>
+                        <p id = "Gejala_1"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2. Apakah anda mengalami berak encer?
+                    </td>
+                    <td>
+                        <p id = "Gejala_2"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3. Apakah anda mengalami berak berdarah?
+                    </td>
+                    <td>
+                        <p id = "Gejala_3"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        4. Apakah anda mearasa lesu dan tidak bergairah?
+                    </td>
+                    <td>
+                        <p id = "Gejala_4"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        5. Apakah anda tidak selera makan?
+                    </td>
+                    <td>
+                        <p id = "Gejala_5"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        6. Apakah anda merasa mual dan sering muntah (lebih dari 1 kali)?
+                    </td>
+                    <td>
+                        <p id = "Gejala_6"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        7. Apakah anda merasa sakit dibagian perut
+                    </td>
+                    <td>
+                        <p id = "Gejala_7"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        8. Apakah tekanan darah anda rendah?
+                    </td>
+                    <td>
+                        <p id = "Gejala_8"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9. Apakah anda merasa pusing?
+                    </td>
+                    <td>
+                        <p id = "Gejala_9"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10. Apakah anda mengalami pingsan?
+                    </td>
+                    <td>
+                        <p id = "Gejala_10"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class = "column">
+            <table border = "1">
+                <tr>
+                    <th>Pertanyaan</th>
+                    <th>Respon User</th>
+                </tr>
+                <tr>
+                    <td>
+                        11. Apakah suhu badan anda tinggi?
+                    </td>
+                    <td>
+                        <p id = "Gejala_11"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        12. Apakah anda mengalai luka dibagian tertentu?
+                    </td>
+                    <td>
+                        <p id = "Gejala_12"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        13. Apakah anda tidak dapat menggerakkan anggota badan tertentu?
+                    </td>
+                    <td>
+                        <p id = "Gejala_13"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        14. Apakah anda pernah memakan sesuatu?
+                    </td>
+                    <td>
+                        <p id ="Gejala_14"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        15. Apakah anda memakan daging?
+                    </td>
+                    <td>
+                        <p id = "Gejala_15"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        16. Apakah anda memakan jamur?
+                    </td>
+                    <td>
+                        <p id = "Gejala_16"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        17. Apakah anda memakan makanan kaleng?
+                    </td>
+                    <td>
+                        <p id = "Gejala_17"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        18. Apakah anda membeli susu?
+                    </td>
+                    <td>
+                        <p id = "Gejala_18"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        19. Apakah anda meminum susu?
+                    </td>
+                    <td>
+                        <p id = "Gejala_19"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <hr>
+
+    
+    <a href="index.html"> Kembali </a>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
+    <script>
+        //Mengambil nilai input dari url
+        let urlParams = new URLSearchParams(window.location.search);
+        let gejala_1 = urlParams.get("gejala_1");
+        let gejala_2 = urlParams.get("gejala_2");
+        let gejala_3 = urlParams.get("gejala_3");
+        let gejala_4 = urlParams.get("gejala_4");
+        let gejala_5 = urlParams.get("gejala_5");
+        let gejala_6 = urlParams.get("gejala_6");
+        let gejala_7 = urlParams.get("gejala_7");
+        let gejala_8 = urlParams.get("gejala_8");
+        let gejala_9 = urlParams.get("gejala_9");
+        let gejala_10 = urlParams.get("gejala_10");
+        let gejala_11 = urlParams.get("gejala_11");
+        let gejala_12 = urlParams.get("gejala_12");
+        let gejala_13= urlParams.get("gejala_13");
+        let gejala_14 = urlParams.get("gejala_14");
+        let gejala_15 = urlParams.get("gejala_15");
+        let gejala_16 = urlParams.get("gejala_16");
+        let gejala_17 = urlParams.get("gejala_17");
+        let gejala_18 = urlParams.get("gejala_18");
+        let gejala_19 = urlParams.get("gejala_19");
+
+        var gejalaList = [gejala_1,  gejala_2,  gejala_3,  gejala_4,  gejala_5,  gejala_6,  gejala_7,
+                          gejala_8,  gejala_9,  gejala_10,  gejala_11,  gejala_12,  gejala_13,  gejala_14,
+                          gejala_15,  gejala_16,  gejala_17,  gejala_18,  gejala_19];
+        
+        // Styling warna respon
+        for (let i = 0; i < gejalaList.length; i++) {
+            if (gejalaList[i] === "true") {
+                document.getElementById("Gejala_" + (i+1)).innerHTML = gejalaList[i];
+                document.getElementById("Gejala_" + (i+1)).style.color = "green";
+            }else{
+                document.getElementById("Gejala_" + (i+1)).innerHTML = gejalaList[i];
+                document.getElementById("Gejala_" + (i+1)).style.color = "red";
+            }
+        }
+
+        var List_gejala_awal = [[0, 1, 3, 4], [3, 4, 5], [3, 6], [3, 7, 8], [7, 9], [3, 4, 8, 10], [3, 7, 10, 11], [3, 12],
+                                [0, 1, 2, 3, 4], [13, 14], [13, 15], [13, 16], [17,18]];
+        var list_gejala_lanjut = [];
+        var list_gejala_lanjut_2 = [[0, 1, 2, 3, 9], [0, 1, 2, 4, 10], [0, 1, 2, 5, 6, 9], [1, 7, 11], [2, 5, 8, 12]];
+        var list_penyakit = [];
+
+        for (var gejala_awal of List_gejala_awal) {
+            var total1 = gejala_awal.filter(i => gejalaList[i]==="true").length;
+            var persentase1 = total1 / gejala_awal.length * 100;
+            list_gejala_lanjut.push(persentase1);
+        }
+            
+        for (var gejala_lanjut of list_gejala_lanjut_2) {
+            var persentase_total = 0;
+            for (var i of gejala_lanjut) {
+            persentase_total += list_gejala_lanjut[i];
+        }
+            var persentase_rata2 = persentase_total / gejala_lanjut.length;
+            list_penyakit.push(persentase_rata2);
+        }
+        var maxPercentage = Math.max(...list_penyakit);
+        var index = list_penyakit.indexOf(maxPercentage);
+        var penyakit_tertinggi = "";
+        var penyakit_kedua = "";
+        switch (index) {
+            case 0:
+                penyakit_tertinggi = "Keracunan Staphylococcus aureus";
+                break;
+            case 1:
+                penyakit_tertinggi = "Keracunan jamur beracun";
+                break;
+            case 2:
+                penyakit_tertinggi = "Keracunan Salmonellae";
+                break;
+            case 3:
+                penyakit_tertinggi = "Keracunan Clostridium botulinum";
+                break;
+            case 4:
+                penyakit_tertinggi = "Keracunan Campylobacter";
+                break;
+            default:
+                penyakit_tertinggi = "Tidak ada penyakit yang terdeteksi";
+                break;
+        }
+                
+        if (list_penyakit.filter(p => p === maxPercentage).length > 1) {
+            penyakit_kedua = "Penyakit lain dengan presentase tertinggi juga ditemukan.";
+        }
+        alert(`Anda terkena penyakit ${penyakit_tertinggi} dengan persentase ${maxPercentage.toFixed(2)}%. ${penyakit_kedua}`);
+
+        
+    </script>
+</body>
+</html>
