@@ -219,7 +219,11 @@
     
     <hr>
 
-    
+    <h1>Penyakit</h1>
+    <canvas id="densityChart_penyakit" width="600" height="400"></canvas>
+    <br>
+    <h1>Gejala Lanjut</h1>
+    <canvas id="densityChart_gejala_lanjut" width="600" height="400"></canvas>
     <a href="index.html"> Kembali </a>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
     <script>
@@ -309,7 +313,98 @@
             penyakit_kedua = "Penyakit lain dengan presentase tertinggi juga ditemukan.";
         }
         alert(`Anda terkena penyakit ${penyakit_tertinggi} dengan persentase ${maxPercentage.toFixed(2)}%. ${penyakit_kedua}`);
+	
+	//Horizontal chat penyakit
+        var densityCanvas = document.getElementById("densityChart_penyakit");
+        var densityData = {
+            label: 'Penyakit',
+            data: [list_penyakit[0], list_penyakit[1], list_penyakit[2], list_penyakit[3], list_penyakit[4]],
+            backgroundColor: [
+                'rgba(0, 99, 132, 0.6)',
+                'rgba(30, 99, 132, 0.6)',
+                'rgba(60, 99, 132, 0.6)',
+                'rgba(90, 99, 132, 0.6)',
+                'rgba(120, 99, 132, 0.6)',
+                'rgba(150, 99, 132, 0.6)',
+                'rgba(180, 99, 132, 0.6)',
+                'rgba(210, 99, 132, 0.6)',
+                'rgba(240, 99, 132, 0.6)'
+            ],
+            borderColor: [
+                'rgba(0, 99, 132, 1)',
+                'rgba(30, 99, 132, 1)',
+                'rgba(60, 99, 132, 1)',
+                'rgba(90, 99, 132, 1)',
+                'rgba(120, 99, 132, 1)',
+                'rgba(150, 99, 132, 1)',
+                'rgba(180, 99, 132, 1)',
+                'rgba(210, 99, 132, 1)',
+                'rgba(240, 99, 132, 1)'
+            ],
+            borderWidth: 2,
+            hoverBorderWidth: 0
+            };
+            var chartOptions = {
+                indexAxis: 'y', 
+            };
+            var barChart = new Chart(densityCanvas, {
+            type: 'bar',
+            data: {
+                labels: ["Keracunan Staphylococcus aureus", "Keracunan jamur beracun", "Keracunan Salmonellae", 
+                "Keracunan Clostridium botulinum", "Keracunan Campylobacter"],
+                datasets: [densityData],
+            },
+            options: chartOptions
+        });
 
+        // Barchart gejala lanjut
+        var densityCanvas = document.getElementById("densityChart_gejala_lanjut");
+        var densityData = {
+            label: 'Gejala Lanjut',
+            data: [list_gejala_lanjut[0], list_gejala_lanjut[1], list_gejala_lanjut[2], list_gejala_lanjut[3],
+                    list_gejala_lanjut[4], list_gejala_lanjut[5], list_gejala_lanjut[6], list_gejala_lanjut[7],
+                    list_gejala_lanjut[8], list_gejala_lanjut[9], list_gejala_lanjut[10], list_gejala_lanjut[11], list_gejala_lanjut[12]],
+            backgroundColor: [
+                    'rgba(0, 99, 132, 0.6)',
+                    'rgba(30, 99, 132, 0.6)',
+                    'rgba(60, 99, 132, 0.6)',
+                    'rgba(90, 99, 132, 0.6)',
+                    'rgba(120, 99, 132, 0.6)',
+                    'rgba(150, 99, 132, 0.6)',
+                    'rgba(180, 99, 132, 0.6)',
+                    'rgba(210, 99, 132, 0.6)',
+                    'rgba(240, 99, 132, 0.6)'
+            ],
+            borderColor: [
+                    'rgba(0, 99, 132, 1)',
+                    'rgba(30, 99, 132, 1)',
+                    'rgba(60, 99, 132, 1)',
+                    'rgba(90, 99, 132, 1)',
+                    'rgba(120, 99, 132, 1)',
+                    'rgba(150, 99, 132, 1)',
+                    'rgba(180, 99, 132, 1)',
+                    'rgba(210, 99, 132, 1)',
+                    'rgba(240, 99, 132, 1)'
+            ],
+            borderWidth: 2,
+            hoverBorderWidth: 0
+            };
+            var barChart = new Chart(densityCanvas, {
+                type: 'bar',
+                data: {
+                    labels: ["Mencret", "Muntah", "Sakit Perut", "Darah Rendah", "Koma", "Demam",
+                                "Septicaemia", "Lumpuh", "Mencret berdarah", "Makan daging", "Makan jamur",
+                                "Makan makanan kaleng", "Minum susu"],
+                    datasets: [densityData]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                },
+        });
         
     </script>
 </body>
